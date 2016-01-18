@@ -17,3 +17,5 @@ github_username:  cwisoftware
 
 # Build settings
 markdown: kramdown
+
+exclude: [vendor]
