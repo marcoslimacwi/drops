@@ -1,7 +1,7 @@
 Blog CWI
 --------
 
-[![Build Status](https://travis-ci.org/CWISoftware/blog.svg?branch=master)](https://travis-ci.org/CWISoftware/blog)
+[![Build Status](https://api.travis-ci.org/CWISoftware/blog.svg?branch=gh-pages)](https://travis-ci.org/CWISoftware/blog)
 
 # Work in progress
 
