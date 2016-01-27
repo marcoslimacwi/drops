@@ -15,7 +15,19 @@ url: "http://blog.cwi.com.br" # the base hostname & protocol for your site
 twitter_username: cwisoftware
 github_username:  cwisoftware
 
+permalink: /:categories/:title
+
 # Build settings
 markdown: kramdown
 
-exclude: [vendor]
+exclude:
+  # folders
+  - docs
+  - vendor
+  - scripts
+
+  # files
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - Vagrantfile

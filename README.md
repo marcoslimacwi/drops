@@ -5,6 +5,13 @@ Blog CWI
 
 # Work in progress
 
+## Criar post
+
+```
+octopress new post 'Nome do post'
+```
+
+
 ## Docs
 
 - [Instalação](/docs/installation.md)
