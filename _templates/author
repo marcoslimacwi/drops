@@ -1,5 +1,5 @@
 ---
 layout: author
-author: {{name}}
-title:
+author: {{username}}
+title: # seu nome, ou apagar a linha para título default
 ---
