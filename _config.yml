@@ -11,7 +11,7 @@ email: your-email@domain.com
 description: >
   CWI Blog
 baseurl: "/blog" # the subpath of your site, e.g. /blog/
-url: "http://blog.cwi.com.br" # the base hostname & protocol for your site
+url: "http://cwisoftware.github.io" # the base hostname & protocol for your site
 twitter_username: cwisoftware
 github_username:  cwisoftware
 
