@@ -1,4 +1,5 @@
 ---
 layout: author
 author: {{name}}
+title:
 ---
