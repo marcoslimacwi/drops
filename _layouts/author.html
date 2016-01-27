@@ -29,7 +29,7 @@ permalink: /autor/
         {% if (post.author == page.author) or (post.author == nil and page.author == site.author) %}
           <li>
             <a href="{{ site.baseurl }}{{ post.url }}">
-              {{ post.date | date: "%d/%m/%Y" }} -
+              {% include post/date.html date=post.date %} -
               {{ post.title }}
             </a>
           </li>
