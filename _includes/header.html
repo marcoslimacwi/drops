@@ -7,11 +7,8 @@
     <nav class="site-nav">
 
       <div class="trigger">
-        {% for p in site.pages %}
-          {% if p.title %}
-          <a class="page-link" href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a>
-          {% endif %}
-        {% endfor %}
+        <a class="page-link" href="{{ '/autores' | prepend: site.baseurl }}">Autores</a>
+        <a class="page-link" href="{{ 'https://github.com/CWISoftware' | append: site.baseurl }}" target="_blank">Github</a>
       </div>
     </nav>
 
