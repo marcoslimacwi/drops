@@ -10,5 +10,10 @@
   <a rel="author" itemprop="author" href="{{ site.baseurl }}/autores/{{ author_name }}">{{ author.name }}</a>
 {% endunless %}
 
-{% include icon/github.html username=author.github %}
-{% include icon/twitter.html username=author.twitter %}
+{% if author.github != nil %}
+  {% include icon/github.html username=author.github %}
+{% endif %}
+
+{% if author.twitter != nil %}
+  {% include icon/twitter.html username=author.twitter %}
+{% endif %}
