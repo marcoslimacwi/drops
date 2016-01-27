@@ -1,0 +1,19 @@
+{% assign author_name = include.author %}
+
+{% if author_name == nil %}
+  {% assign author_name = site.author %}
+{% endif %}
+
+{% assign author = site.data.authors[author_name][author_name] %}
+
+{% unless include.hide_name %}
+  <a rel="author" itemprop="author" href="{{ site.baseurl }}/autores/{{ author_name }}">{{ author.name }}</a>
+{% endunless %}
+
+{% if author.github != nil %}
+  {% include icon/github.html username=author.github %}
+{% endif %}
+
+{% if author.twitter != nil %}
+  {% include icon/twitter.html username=author.twitter %}
+{% endif %}

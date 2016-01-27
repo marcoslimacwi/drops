@@ -1,0 +1,7 @@
+{{name}}:
+  name: your real name
+  github: your github user, or delete the line
+  twitter: your twitter user, or delete the line
+  gravatar: your gravatar hash if you want to show your picture, or delete the line
+  about: >
+    About yourself, or delete line
