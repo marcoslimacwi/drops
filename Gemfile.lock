@@ -50,6 +50,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (= 3.1.0)
+  liquid (= 3.0.6)
   octopress (~> 3.0)
 
 BUNDLED WITH
