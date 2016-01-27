@@ -2,7 +2,7 @@ language: ruby
 rvm:
   - 2.2.3
 
-script: ./_ci/build
+script: ./scripts/ci
 
 cache:
   bundler: true
