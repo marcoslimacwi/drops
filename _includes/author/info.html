@@ -7,7 +7,7 @@
 {% assign author = site.data.authors[page_author] %}
 
 {% unless include.hide_name %}
-  <a rel="author" itemprop="author" href="{{ site.url }}/authors/{{ page_author }}">{{ author.name }}</a>
+  <a rel="author" itemprop="author" href="{{ site.baseurl }}/autores/{{ page_author }}">{{ author.name }}</a>
 {% endunless %}
 {% include icon/github.html username=author.github %}
 {% include icon/twitter.html username=author.twitter %}

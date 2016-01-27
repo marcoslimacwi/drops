@@ -1,0 +1,32 @@
+---
+layout: page
+title: arroz
+permalink: /autor/
+---
+
+{% assign author = site.data.authors[page.author] %}
+
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    {% include author/avatar.html author=author size=100 %}
+    <h1 class="post-title" itemprop="name headline">{{ author.name }}</h1>
+    <p class="post-meta">
+      <p>{% include author/info.html author=page.author hide_name=true %}</p>
+    </p>
+  </header>
+
+  <ul>
+    {% for post in site.posts do %}
+      {% if (post.author == page.author) or (post.author == nil and page.author == site.author) %}
+        <li>
+          <a href="{{ site.baseurl }}{{ post.url }}">
+            {{ post.date | date: "%d/%m/%Y" }} -
+            {{ post.title }}
+          </a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+</article>

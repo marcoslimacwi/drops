@@ -1,14 +1,11 @@
 ---
-layout: default
+layout: page
 ---
-<article class="post">
-
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-  </header>
-
-  <div class="post-content">
-    {{ content }}
-  </div>
-
-</article>
+<ul>
+  {% for a in site.data.authors %}
+    {% assign author = a[0] %}
+    <li>
+      {% include author/info.html author=author %}
+    </li>
+  {% endfor %}
+</ul>
