@@ -1,13 +1,14 @@
-{% assign page_author = include.author %}
+{% assign author_name = include.author %}
 
-{% if page_author == nil %}
-  {% assign page_author = site.author %}
+{% if author_name == nil %}
+  {% assign author_name = site.author %}
 {% endif %}
 
-{% assign author = site.data.authors[page_author] %}
+{% assign author = site.data.authors[author_name][author_name] %}
 
 {% unless include.hide_name %}
-  <a rel="author" itemprop="author" href="{{ site.baseurl }}/autores/{{ page_author }}">{{ author.name }}</a>
+  <a rel="author" itemprop="author" href="{{ site.baseurl }}/autores/{{ author_name }}">{{ author.name }}</a>
 {% endunless %}
+
 {% include icon/github.html username=author.github %}
 {% include icon/twitter.html username=author.twitter %}
