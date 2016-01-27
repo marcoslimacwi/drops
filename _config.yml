@@ -12,11 +12,11 @@ email: contato@cwi.com.br
 twitter: cwisoftware
 github: cwisoftware
 
-title: CWI Blog
+title: Drops
 description: >
   Blog colaborativo da CWI
 
-baseurl: "/blog" # the subpath of your site, e.g. /blog/
+baseurl: "/drops" # the subpath of your site, e.g. /blog/
 url: "http://cwisoftware.github.io" # the base hostname & protocol for your site
 
 permalink: /:categories/:title
