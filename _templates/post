@@ -1,5 +1,8 @@
 ---
 layout: {{ layout }}
-title: "{{ title }}"
 date: {{ date }}
+title: "{{ title }}"
+author: Seu nome de usuário ou apagar a linha para usar usuário default (CWI)
+summary: >
+  Resumo do post ou apagar a linha
 ---
