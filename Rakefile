@@ -11,6 +11,7 @@ task :author do
   create_author_data name
   puts "Criado author #{name}"
   puts "Edite o arquivo #{@data_file_path} com seus dados"
+  puts "Coloque o seu nome como title no arquivo #{@page_file_path}"
 end
 
 def prepare_name(name)
