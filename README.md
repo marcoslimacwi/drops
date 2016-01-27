@@ -1,4 +1,4 @@
-[Blog CWI](http://cwisoftware.github.io/blog/)
+[Drops CWI](http://cwisoftware.github.io/drops/)
 --------
 
 [![Build Status](https://api.travis-ci.org/CWISoftware/blog.svg?branch=gh-pages)](https://travis-ci.org/CWISoftware/blog)
