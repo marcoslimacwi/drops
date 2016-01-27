@@ -1,4 +1,4 @@
-Blog CWI
+[Blog CWI](http://cwisoftware.github.io/blog/)
 --------
 
 [![Build Status](https://api.travis-ci.org/CWISoftware/blog.svg?branch=gh-pages)](https://travis-ci.org/CWISoftware/blog)
