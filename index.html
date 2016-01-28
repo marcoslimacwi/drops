@@ -7,17 +7,19 @@ layout: default
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
-        <span class="post-meta">{% include post/date.html date=post.date %}</span>
+        <h1>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <span class="post-meta post-data-right">{% include post/date.html date=post.date %}</span>
+        </h1>
         {% assign username = post.author %}
-        <div class="user-profile">
+        <div class="user-profile user-profile-home">
           <div class="user-profile-image">
             {% include author/avatar.html username=username size=60 %}
           </div>
-          <h4 class="user-name">{% include author/name.html   username=username %}</h4>
+          <h4 class="user-name">
+            {% include author/name.html   username=username %}
+          </h4>
         </div>
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
       </li>
     {% endfor %}
   </ul>

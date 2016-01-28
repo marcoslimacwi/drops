@@ -267,7 +267,7 @@
   margin-right: 15px;
   overflow: hidden;
   -webkit-border-radius: 50%;
-  -mox-border-radius: 50%;
+  -moz-border-radius: 50%;
   border-radius: 50%;
   float: left;
 }
@@ -281,4 +281,28 @@
   padding-top: 20px;
   margin: 0;
   float: left;
+}
+
+.user-profile-home {
+  padding-top: 0;
+}
+
+.user-profile-home .user-profile-image {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.post-data-right {
+  padding-top: 10px;
+  float: right;
+}
+
+.user-profile-home .user-name {
+  padding-top: 3px;
+}
+
+h1 .post-link {
+  display: inline;
+  font-size: 1.2em;
 }
