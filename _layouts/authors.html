@@ -6,6 +6,12 @@ layout: page
     <li>
       {% assign username = a[0] %}
 
+      <h3>
+        <a rel="author" itemprop="author" href="{{ site.baseurl }}/autores/{{ username }}">
+          {% include author/name.html username=username %}
+        </a>
+      </h3>
+
       <div class="user-profile">
         <div class="user-profile-image">
           {% include author/avatar.html username=username size=60 %}

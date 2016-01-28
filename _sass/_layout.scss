@@ -20,6 +20,18 @@
   z-index: 1;
 }
 
+@media (max-width: 640px) {
+  .site-header {
+      height: 160px;
+      background-size: auto 60%;
+  }
+
+  .site-title-header {
+    width: 250px;
+    margin-left: -125px;
+  }
+}
+
 .header-navigation .site-nav .page-link {
   font-size: 14px;
 }
@@ -112,7 +124,7 @@
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
+    border-top: 1px solid darken($grey-color-light, 5%);
     padding: $spacing-unit 0;
 }
 
@@ -305,6 +317,10 @@
   padding-top: 3px;
 }
 
+.user-name a + a {
+  padding-left: 10px;
+}
+
 h1 .post-link {
   display: inline;
   font-size: 1.2em;
@@ -318,6 +334,6 @@ h1 .post-link {
   font-size: 2em;
 }
 
-.post-list p {
+p {
   font-family: 'open_sanslight_italic';
 }

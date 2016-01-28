@@ -21,10 +21,6 @@
 {% assign show_author_link = include.show_author_link %}
 
 <!-- output -->
-{% if show_author_link %}
-  <a rel="author" itemprop="author" href="{{ site.baseurl }}/autores/{{ username }}">{{ name }}</a>
-{% endif %}
-
 {% if github %}
   {% include icon/github.html username=github %}
 {% endif %}
