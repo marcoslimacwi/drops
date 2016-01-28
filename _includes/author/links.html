@@ -1,14 +1,20 @@
-{% assign author_name = include.author %}
+<!--
+  `links` is the only component that needs `username` instead of `author`,
+  because we must link to the `author` page via `username`
+-->
 
-{% if author_name == nil %}
-  {% assign author_name = site.author %}
+{% assign username = include.author %}
+
+{% if username == nil %}
+  {% assign username = site.author %}
 {% endif %}
 
-{% assign author = site.data.authors[author_name][author_name] %}
+<!-- assign author -->
+{% assign author = site.data.authors[username][username] %}
 
-{% unless include.hide_name %}
-  <a rel="author" itemprop="author" href="{{ site.baseurl }}/autores/{{ author_name }}">{{ author.name | escape }}</a>
-{% endunless %}
+{% if include.show_author_link %}
+  <a rel="author" itemprop="author" href="{{ site.baseurl }}/autores/{{ username }}">{{ author.name | escape }}</a>
+{% endif %}
 
 {% if author.github != nil %}
   {% include icon/github.html username=author.github %}

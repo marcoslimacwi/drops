@@ -3,23 +3,20 @@ layout: default
 permalink: /autor/
 ---
 
-{% assign author = site.data.authors[page.author][page.author] %}
+<!-- assign author -->
+{% assign username = page.author %}
+{% assign author = site.data.authors[username][username] %}
 
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
     <h1 class="post-title" itemprop="name headline">{{ author.name | escape }}</h1>
-    <p class="post-meta">
-      <p>{% include author/links.html author=page.author hide_name=true %}</p>
-    </p>
-
-    <!-- avatar -->
+    <!-- author links -->
+    {% include author/links.html author=username %}
+    <!-- author avatar -->
     {% include author/avatar.html author=author size=100 %}
-
-    <!-- about -->
-    {% if author.about != nil%}
-      <p>{{ author.about | escape }}</p>
-    {% endif %}
+    <!-- author about -->
+    {% include author/about.html author=author %}
   </header>
 
   <div>

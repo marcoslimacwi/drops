@@ -3,9 +3,14 @@ layout: page
 ---
 <ul>
   {% for a in site.data.authors %}
-    {% assign author = a[0] %}
     <li>
-      {% include author/links.html author=author %}
+      <!-- assign author -->
+      {% assign username = a[0] %}
+      {% assign author = site.data.authors[username][username] %}
+      <!-- author links -->
+      {% include author/links.html author=username show_author_link=true %}
+      <!-- author avatar -->
+      {% include author/avatar.html author=author size=60 %}
     </li>
   {% endfor %}
 </ul>

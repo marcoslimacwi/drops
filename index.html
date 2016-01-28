@@ -8,7 +8,13 @@ layout: default
     {% for post in site.posts %}
       <li>
         <span class="post-meta">{% include post/date.html date=post.date %}</span>
-        {{site.data.authors[post.author][post.author].name | escape }}
+        <!-- assign author -->
+        {% assign username = post.author %}
+        {% assign author = site.data.authors[username][username] %}
+        <!-- author name -->
+        {% include author/name.html author=author %}
+        <!-- author avatar -->
+        {% include author/avatar.html author=author size=60 %}
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
