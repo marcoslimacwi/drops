@@ -19,9 +19,7 @@
 {% assign name = author.name | escape %}
 
 <!-- output -->
-{% if gravatar %}
-  <img
-    src="{{ gravatar_url }}{{ gravatar | escape }}?s={{ size }}"
-    alt="{{ name }} Gravatar picture"
-  />
-{% endif %}
+<img
+  src="{{ gravatar_url }}{{ gravatar | escape }}?s={{ size }}"
+  alt="{{ name }} Gravatar picture"
+/>
