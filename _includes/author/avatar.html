@@ -1,5 +1,21 @@
-{% if include.author.gravatar %}
+{% comment %}
+  shows author's gravatar image, if present
+  params:
+    author - object
+    size - number
+{% endcomment %}
+
+{% assign gravatar_url = site.data.resources.gravatar %}
+{% assign size = include.size %}
+{% assign author = include.author %}
+{% assign gravatar = author.gravatar | escape %}
+{% assign name = author.name | escape %}
+
+
+<!-- avatar component -->
+{% if gravatar %}
   <img
-    src="{{ site.data.resources.gravatar }}{{ include.author.gravatar | escape }}?s={{ include.size }}" 
-    alt="{{ include.author.name | escape }} Gravatar picture"/>
+    src="{{ gravatar_url }}{{ gravatar | escape }}?s={{ size }}"
+    alt="{{ name }} Gravatar picture"
+  />
 {% endif %}

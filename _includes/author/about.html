@@ -1,3 +1,13 @@
-{% if include.author.about != nil%}
-  <p>{{ include.author.about | escape }}</p>
+{% comment %}
+  shows author's 'about', if present
+  params:
+    author - object
+{% endcomment %}
+
+{% assign about = include.author.about | escape %}
+
+
+<!-- about component -->
+{% if about %}
+  <p>{{ about }}</p>
 {% endif %}

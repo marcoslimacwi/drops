@@ -1,1 +1,11 @@
-{{ include.author.name | escape }}
+{% comment %}
+  shows author's real name
+  params:
+    author - object
+{% endcomment %}
+
+{% assign name = include.author.name | escape %}
+
+
+<!-- name component -->
+{{ name }}
