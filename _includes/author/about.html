@@ -4,10 +4,17 @@
     author - object
 {% endcomment %}
 
-{% assign about = include.author.about | escape %}
+<!-- assign author -->
+{% assign username = include.username %}
+{% assign author = site.data.authors[username][username] %}
+{% if author == nil %}
+  {% assign author = site.data.authors[site.author][site.author] %}
+{% endif %}
 
+<!-- assign variables -->
+{% assign about = author.about | escape %}
 
-<!-- about component -->
+<!-- output -->
 {% if about %}
   <p>{{ about }}</p>
 {% endif %}

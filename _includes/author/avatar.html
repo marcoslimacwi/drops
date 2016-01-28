@@ -5,14 +5,20 @@
     size - number
 {% endcomment %}
 
+<!-- assign author -->
+{% assign username = include.username %}
+{% assign author = site.data.authors[username][username] %}
+{% if author == nil %}
+  {% assign author = site.data.authors[site.author][site.author] %}
+{% endif %}
+
+<!-- assign variables -->
 {% assign gravatar_url = site.data.resources.gravatar %}
 {% assign size = include.size %}
-{% assign author = include.author %}
 {% assign gravatar = author.gravatar | escape %}
 {% assign name = author.name | escape %}
 
-
-<!-- avatar component -->
+<!-- output -->
 {% if gravatar %}
   <img
     src="{{ gravatar_url }}{{ gravatar | escape }}?s={{ size }}"

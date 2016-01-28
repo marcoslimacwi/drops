@@ -9,13 +9,11 @@ layout: default
       <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {% include post/date.html date=page.date %}
       </time>
-      <!-- assign author -->
       {% assign username = page.author %}
-      {% assign author = site.data.authors[username][username] %}
       <!-- author avatar -->
-      {% include author/avatar.html author=author size=60 %}
+      {% include author/avatar.html username=username size=60 %}
       <!-- author links -->
-      {% include author/links.html author=username show_author_link=true %}
+      {% include author/links.html username=username show_author_link=true %}
     </p>
   </header>
 
