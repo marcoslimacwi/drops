@@ -2,20 +2,26 @@
  * Site header
  */
 .site-header {
-    border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
-
+    height: 180px;
+    border-top: 3px solid $brand-color;
     // Positioning context for the mobile navigation icon
     position: relative;
+    background: $grey-color-darker url('../img/drops.png') no-repeat center;
 }
 
-.site-header:before {
-  content: '';
+.site-title-header {
   display: block;
   width: 100%;
-  height: 230px;
-  border-top: 3px solid $brand-color;
-  background: $grey-color-darker url('../img/drops.png') no-repeat center;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.header-navigation .site-nav .page-link {
+  font-size: 12px;
+  color: $grey-color-light;
 }
 
 .site-title {
