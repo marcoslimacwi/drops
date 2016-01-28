@@ -11,8 +11,13 @@ layout: default
         {% include post/date.html date=page.date %}
       </time>
       {% assign username = page.author %}
-      {% include author/avatar.html username=username size=60 %}
-      {% include author/links.html  username=username show_author_link=true %}
+
+      <div class="user-profile">
+        <div class="user-profile-image">
+          {% include author/avatar.html username=username size=60 %}
+        </div>
+        <p class="user-name">{% include author/links.html  username=username show_author_link=true %}</p>
+      </div>
     </p>
   </header>
 

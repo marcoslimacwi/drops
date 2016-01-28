@@ -1,12 +1,17 @@
 ---
 layout: page
 ---
-<ul>
+<ul class="post-list">
   {% for a in site.data.authors %}
     <li>
       {% assign username = a[0] %}
-      {% include author/links.html  username=username show_author_link=true %}
-      {% include author/avatar.html username=username size=60 %}
+
+      <div class="user-profile">
+        <div class="user-profile-image">
+          {% include author/avatar.html username=username size=60 %}
+        </div>
+        <p class="user-name">{% include author/links.html  username=username show_author_link=true %}</p>
+      </div>
     </li>
   {% endfor %}
 </ul>

@@ -9,8 +9,12 @@ layout: default
       <li>
         <span class="post-meta">{% include post/date.html date=post.date %}</span>
         {% assign username = post.author %}
-        {% include author/name.html   username=username %}
-        {% include author/avatar.html username=username size=60 %}
+        <div class="user-profile">
+          <div class="user-profile-image">
+            {% include author/avatar.html username=username size=60 %}
+          </div>
+          <h4 class="user-name">{% include author/name.html   username=username %}</h4>
+        </div>
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>

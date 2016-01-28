@@ -2,12 +2,20 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
 
     // Positioning context for the mobile navigation icon
     position: relative;
+}
+
+.site-header:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 230px;
+  border-top: 3px solid $brand-color;
+  background: $grey-color-darker url('../img/drops.png') no-repeat center;
 }
 
 .site-title {
@@ -180,7 +188,13 @@
     list-style: none;
 
     > li {
+        padding-top: 20px;
+        border-top: 1px solid $grey-color-light;
         margin-bottom: $spacing-unit;
+    }
+
+    > li:first-child {
+      border: none;
     }
 }
 
@@ -239,4 +253,32 @@
             font-size: 18px;
         }
     }
+}
+
+// USER profile:
+.user-profile {
+  padding: 15px 0;
+  overflow: hidden;
+}
+
+.user-profile-image {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+  overflow: hidden;
+  -webkit-border-radius: 50%;
+  -mox-border-radius: 50%;
+  border-radius: 50%;
+  float: left;
+}
+
+.user-profile-image img {
+  display: block;
+  width: 100%;
+}
+
+.user-profile .user-name {
+  padding-top: 20px;
+  margin: 0;
+  float: left;
 }

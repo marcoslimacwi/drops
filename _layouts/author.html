@@ -9,14 +9,19 @@ permalink: /autor/
     <h1 class="post-title" itemprop="name headline">
       {% include author/name.html username=username %}
     </h1>
-    {% include author/links.html  username=username %}
-    {% include author/avatar.html username=username size=100 %}
     {% include author/about.html  username=username %}
+
+    <div class="user-profile">
+      <div class="user-profile-image">
+        {% include author/avatar.html username=username size=60 %}
+      </div>
+      <p class="user-name">{% include author/links.html  username=username show_author_link=true %}</p>
+    </div>
   </header>
 
   <div>
     <h2>Posts do autor</h2>
-    <ul>
+    <ul class="post-list">
       {% for post in site.posts do %}
         {% if (post.author == page.author) or (post.author == nil and page.author == site.author) %}
           <li>
