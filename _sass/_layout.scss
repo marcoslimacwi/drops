@@ -6,22 +6,22 @@
     border-top: 3px solid $brand-color;
     // Positioning context for the mobile navigation icon
     position: relative;
-    background: $grey-color-darker url('../img/drops.png') no-repeat center;
+    background: url('../img/drops.png') no-repeat center;
 }
 
 .site-title-header {
   display: block;
-  width: 100%;
+  width: 284px;
   height: 100%;
+  margin-left: -142px;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 50%;
   z-index: 1;
 }
 
 .header-navigation .site-nav .page-link {
-  font-size: 12px;
-  color: $grey-color-light;
+  font-size: 14px;
 }
 
 .site-title {
@@ -195,13 +195,10 @@
 
     > li {
         padding-top: 20px;
-        border-top: 1px solid $grey-color-light;
+        border-top: 1px solid darken($grey-color-light, 5%);
         margin-bottom: $spacing-unit;
     }
 
-    > li:first-child {
-      border: none;
-    }
 }
 
 .post-meta {
@@ -311,4 +308,16 @@
 h1 .post-link {
   display: inline;
   font-size: 1.2em;
+}
+
+.user-name .post-meta {
+  color: $brand-color;
+}
+
+.post-list h2 {
+  font-size: 2em;
+}
+
+.post-list p {
+  font-family: 'open_sanslight_italic';
 }

@@ -4,7 +4,7 @@ title:  "Welcome to Jekyll!"
 date:   2016-01-15 09:16:35 -0200
 categories: jekyll update
 abstract: >
-  Jekyll auto post
+  Sed convallis ultricies arcu non bibendum. Nam finibus nunc a arcu iaculis, semper sagittis urna placerat. Nulla et volutpat dolor. Sed non urna sed lorem sollicitudin tristique. Aliquam commodo euismod vehicula. Vivamus vitae vehicula purus. Nulla venenatis est vel mollis varius. Suspendisse euismod lorem ut iaculis hendrerit.
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
