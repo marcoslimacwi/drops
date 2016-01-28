@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
@@ -10,10 +11,8 @@ layout: default
         {% include post/date.html date=page.date %}
       </time>
       {% assign username = page.author %}
-      <!-- author avatar -->
       {% include author/avatar.html username=username size=60 %}
-      <!-- author links -->
-      {% include author/links.html username=username show_author_link=true %}
+      {% include author/links.html  username=username show_author_link=true %}
     </p>
   </header>
 

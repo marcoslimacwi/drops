@@ -4,11 +4,8 @@ layout: page
 <ul>
   {% for a in site.data.authors %}
     <li>
-      <!-- assign author -->
       {% assign username = a[0] %}
-      <!-- author links -->
-      {% include author/links.html username=username show_author_link=true %}
-      <!-- author avatar -->
+      {% include author/links.html  username=username show_author_link=true %}
       {% include author/avatar.html username=username size=60 %}
     </li>
   {% endfor %}

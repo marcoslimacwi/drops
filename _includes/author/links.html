@@ -21,18 +21,16 @@
 {% assign show_author_link = include.show_author_link %}
 
 <!-- output -->
-<div>
-  {% if show_author_link %}
-    <a rel="author" itemprop="author" href="{{ site.baseurl }}/autores/{{ username }}">{{ name }}</a>
-  {% endif %}
+{% if show_author_link %}
+  <a rel="author" itemprop="author" href="{{ site.baseurl }}/autores/{{ username }}">{{ name }}</a>
+{% endif %}
 
-  {% if github %}
-    Github:
-    {% include icon/github.html username=github %}
-  {% endif %}
+{% if github %}
+  Github:
+  {% include icon/github.html username=github %}
+{% endif %}
 
-  {% if twitter %}
-    Twitter:
-    {% include icon/twitter.html username=twitter %}
-  {% endif %}
-</div>
+{% if twitter %}
+  Twitter:
+  {% include icon/twitter.html username=twitter %}
+{% endif %}

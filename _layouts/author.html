@@ -2,20 +2,16 @@
 layout: default
 permalink: /autor/
 ---
-
-<!-- assign author -->
-{% assign username = page.author %}
-
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  {% assign username = page.author %}
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{% include author/name.html username=username %}</h1>
-    <!-- author links -->
-    {% include author/links.html username=username %}
-    <!-- author avatar -->
+    <h1 class="post-title" itemprop="name headline">
+      {% include author/name.html username=username %}
+    </h1>
+    {% include author/links.html  username=username %}
     {% include author/avatar.html username=username size=100 %}
-    <!-- author about -->
-    {% include author/about.html username=username %}
+    {% include author/about.html  username=username %}
   </header>
 
   <div>
@@ -25,8 +21,7 @@ permalink: /autor/
         {% if (post.author == page.author) or (post.author == nil and page.author == site.author) %}
           <li>
             <a href="{{ site.baseurl }}{{ post.url }}">
-              {% include post/date.html date=post.date %} -
-              {{ post.title }}
+              {% include post/date.html date=post.date %} - {{ post.title }}
             </a>
           </li>
         {% endif %}
