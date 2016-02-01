@@ -236,6 +236,7 @@
     font-size: 42px;
     letter-spacing: -1px;
     line-height: 1;
+    color: $grey-color-darker;
 
     @include media-query($on-laptop) {
         font-size: 36px;
@@ -334,6 +335,8 @@ h1 .post-link {
   font-size: 2em;
 }
 
-p {
+.home p,
+em {
   font-family: 'open_sanslight_italic';
+  font-style: normal;
 }
