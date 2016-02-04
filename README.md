@@ -15,7 +15,7 @@ Veja o [Drops CWI](http://cwisoftware.github.io/drops/)!
 
 Todos colaboradores da CWI podem escrever no blog!
 
-- [Criar autor](/docs/author-author.md)
+- [Criar autor](/docs/author-create.md)
 
 
 ## Posts
