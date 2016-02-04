@@ -28,7 +28,7 @@ vagrant ssh
 cd /vagrant && ./scripts/run_guest.sh
 ```
 
-Acesse http://localhost:4000/drops/
+Acesse [http://localhost:4000/drops/](http://localhost:4000/drops/)
 
 
 ## Instalando no seu ambiente local
@@ -51,4 +51,4 @@ bundle install
 jekyll s
 ```
 
-Acesse http://localhost:4000/drops/
+Acesse [http://localhost:4000/drops/](http://localhost:4000/drops/)
