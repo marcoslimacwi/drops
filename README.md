@@ -15,10 +15,10 @@ Veja o [Drops CWI](http://cwisoftware.github.io/drops/)!
 
 Todos colaboradores da CWI podem escrever no blog!
 
-- [Criar autor](/docs/create-author.md)
+- [Criar autor](/docs/author-author.md)
 
 
 ## Posts
 
-- [Criar post](/docs/create-post.md)
+- [Criar post](/docs/post-create.md)
 - [Dicas para o seu post](/docs/post-tips.md)
