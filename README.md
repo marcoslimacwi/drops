@@ -1,9 +1,9 @@
 [Drops CWI](http://cwisoftware.github.io/drops/)
---------
+-----------
 
-[![Build Status](https://api.travis-ci.org/CWISoftware/blog.svg?branch=gh-pages)](https://travis-ci.org/CWISoftware/blog)
+[![Build Status](https://api.travis-ci.org/CWISoftware/drops.svg?branch=gh-pages)](https://travis-ci.org/CWISoftware/drops)
 
-# Work in progress
+Veja o [Drops CWI](http://cwisoftware.github.io/drops/)!
 
 
 ## Ambiente
@@ -11,19 +11,14 @@
 - [Instalação](/docs/installation.md)
 
 
-## Criar autor
+## Autores
 
-Todos colaboradores da CWI podem escrever no blog! Você só precisa de um nome de usuário e gerar alguns arquivos com suas informações.
+Todos colaboradores da CWI podem escrever no blog!
 
-```sh
-rake author <usuario>
-```
-
-Ou manualmente, criar os arquivos `autores/<usuario>.md` e `_data/authors/<usuario>.yml` e preencher conforme os demais.
+- [Criar autor](/docs/create-author.md)
 
 
-## Criar post
+## Posts
 
-```sh
-octopress new post 'Nome do post'
-```
+- [Criar post](/docs/create-post.md)
+- [Dicas para o seu post](/docs/post-tips.md)

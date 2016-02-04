@@ -17,7 +17,7 @@ Existem 2 formas de instalar o ambiente de desenvolvimento:
 ### Instalação
 
 ```
-git clone https://github.com/CWISoftware/blog.git && cd blog
+git clone https://github.com/CWISoftware/drops.git && cd drops
 vagrant up
 ```
 
@@ -28,7 +28,7 @@ vagrant ssh
 cd /vagrant && ./scripts/run_guest.sh
 ```
 
-Acesse http://0.0.0.0:4000/blog/
+Acesse http://localhost:4000/drops/
 
 
 ## Instalando no seu ambiente local
@@ -41,20 +41,14 @@ Acesse http://0.0.0.0:4000/blog/
 ### Instalação
 
 ```
-git clone https://github.com/CWISoftware/blog.git && cd blog
+git clone https://github.com/CWISoftware/drops.git && cd drops
 bundle install
 ```
 
 ### Rodando o projeto
 
 ```
-./scripts/run_host.sh
-```
-
-ou
-
-```
 jekyll s
 ```
 
-Acesse http://0.0.0.0:4000/blog/
+Acesse http://localhost:4000/drops/
