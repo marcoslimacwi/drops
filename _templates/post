@@ -2,7 +2,6 @@
 layout: {{ layout }}
 date: {{ date }}
 title: "{{ title }}"
-author: Seu nome de usuário ou apagar a linha para usar usuário default (CWI)
-abstract: >
-  Resumo do post ou apagar a linha
+author: # seu nome de usuário
+abstract: # resumo do post ou apagar
 ---

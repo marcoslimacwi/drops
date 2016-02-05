@@ -44,7 +44,9 @@ def print_end_message(username)
   puts
   puts "    Criado author #{username}!"
   puts
+  puts " -> Arquivos criados:"
+  puts " ->   - arquivo de dados do autor (#{@data_file_path})"
+  puts " ->   - arquivo que gera a página do autor (#{@page_file_path})"
   puts " -> Edite o arquivo #{@data_file_path} com seus dados"
-  puts " -> Coloque o seu nome como title no arquivo #{@page_file_path}"
   puts
 end

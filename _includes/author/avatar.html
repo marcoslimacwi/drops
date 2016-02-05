@@ -5,20 +5,20 @@
     size - number
 {% endcomment %}
 
-<!-- assign author -->
+{% comment %} ASSIGN AUTHOR {% endcomment %}
 {% assign username = include.username %}
 {% assign author = site.data.authors[username][username] %}
 {% if author == nil %}
   {% assign author = site.data.authors[site.author][site.author] %}
 {% endif %}
 
-<!-- assign variables -->
+{% comment %} ASSIGN VARIABLE {% endcomment %}
 {% assign gravatar_url = site.data.resources.gravatar %}
 {% assign size = include.size %}
 {% assign gravatar = author.gravatar | escape %}
 {% assign name = author.name | escape %}
 
-<!-- output -->
+{% comment %} OUTPUT {% endcomment %}
 <img
   src="{{ gravatar_url }}{{ gravatar | escape }}?s={{ size }}"
   alt="{{ name }} Gravatar picture"

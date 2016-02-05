@@ -7,20 +7,20 @@
   because we must link to the `author` page via `username`
 {% endcomment %}
 
-<!-- assign author -->
+{% comment %} ASSIGN AUTHOR {% endcomment %}
 {% assign username = include.username %}
 {% assign author = site.data.authors[username][username] %}
 {% if author == nil %}
   {% assign author = site.data.authors[site.author][site.author] %}
 {% endif %}
 
-<!-- assign variables -->
+{% comment %} ASSIGN VARIABLE {% endcomment %}
 {% assign name = author.name | escape %}
 {% assign github = author.github | escape %}
 {% assign twitter = author.twitter | escape %}
 {% assign show_author_link = include.show_author_link %}
 
-<!-- output -->
+{% comment %} OUTPUT {% endcomment %}
 {% if show_author_link %}
   <a rel="author" itemprop="author" href="{{ site.baseurl }}/autores/{{ username }}">{{ name }}</a>
 {% endif %}
