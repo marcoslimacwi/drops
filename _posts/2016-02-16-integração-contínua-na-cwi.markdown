@@ -6,7 +6,11 @@ author: alexandre-machado
 abstract: >
   Integração Contínua na CWI, um resumo resumido.
 ---
-Em janeiro de 2014 apresentei junto com o [Altamir](https://www.facebook.com/altamir.junior.dias) um resumo sobre integração contínua, seus benefícios, projetos que já utilizam e a percepção de retorno nestes projetos.
+<center>
+<img alt="Ferramentas mais utilizadas" src="{{ site.baseurl }}/content/2016-02-16-integração-contínua-na-cwi/icone.png" />
+</center>
+
+Em janeiro de 2014 apresentei junto com o [Altamir](https://www.facebook.com/altamir.junior.dias) um resumo sobre integração contínua, seus benefícios, projetos na CWI que já utilizamos e a percepção de retorno destes projetos.
 
 Naquela ocasião, listamos clientes como **Unimed POA**, **Lojas Renner**, **TNT Express**, **Casas Bahia** e **Coca-Cola** e os depoimentos foram variados:
 
