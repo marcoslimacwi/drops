@@ -4,7 +4,7 @@ date: 2016-02-17T12:00:00-02:00
 title: "Integração Contínua na CWI"
 author: alexandre-machado
 abstract: >
-  Integração Contínua na CWI, um resumo resumido.
+  Integração Contínua na CWI, um resumo.
 ---
 Em fevereiro de 2015 apresentei junto com o [Altamir](https://www.facebook.com/altamir.junior.dias) um resumo sobre integração contínua,
 seus benefícios, adoção em projetos da CWI e a percepção de retorno destes projetos.
