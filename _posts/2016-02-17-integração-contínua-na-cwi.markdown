@@ -31,10 +31,8 @@ Os depoimentos foram variados mas animadores:
 #### Coca-Cola:
 > "O processo só não esta melhor por que a ferramenta do cliente (uDeploy) exige alguns processos manuais." - Jonas Flesch
 
-De lá para cá, muita coisa aconteceu. 
-Novos clientes e novas técnicas, mas isto será assunto para um próximo post :)
+Confira os slides da apresentação na íntegra:
 
-### Apresentação na Íntegra:
 <center>
-  <iframe src="//pt.slideshare.net/slideshow/embed_code/key/3T7JlN5D5hoxjE" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+  <iframe src="//pt.slideshare.net/slideshow/embed_code/key/3T7JlN5D5hoxjE" width="740" height="603" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
 </center>
