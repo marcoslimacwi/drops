@@ -6,7 +6,7 @@ author: alexandre-machado
 abstract: >
   Integração Contínua na CWI, um resumo.
 ---
-Em fevereiro de 2015 apresentei junto com o [Altamir](https://www.facebook.com/altamir.junior.dias) um resumo sobre integração contínua,
+Em fevereiro de 2015 [Altamir](https://www.facebook.com/altamir.junior.dias) e eu apresentamos um resumo sobre integração contínua,
 seus benefícios, adoção em projetos da CWI e a percepção de retorno destes projetos.
 
 Ferramentas como Jenkins, TeamCity e TFS já eram muito utilizadas: 
