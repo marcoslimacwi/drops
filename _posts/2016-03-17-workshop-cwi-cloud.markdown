@@ -2,7 +2,7 @@
 layout: post
 date: 2016-03-17T12:00:00-02:00
 title: "Workshop CWI - Cloud"
-author: giovani-decusati
+author: giovanidecusati
 abstract: >
   Resumo da apresentação realizada pelos colaboradores Giovani Barili e Giovani Decusati no Workshop.
 ---
