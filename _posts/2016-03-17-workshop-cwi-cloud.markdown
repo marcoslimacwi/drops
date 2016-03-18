@@ -11,8 +11,11 @@ Palestrantes: [Giovani Barili](https://www.linkedin.com/in/giovanibarili) e [Gio
 
 A palestra apresentada durante o Workshop tecnológico da CWI em 26 de fevereiro de 2016, expõe alguns pontos sobre Cloud Computing.
 Os palestrantes Giovani Barili e Giovani Decusati esclareceram algumas dúvidas relacionadas a Cloud e Hosting, incluindo modelos de hospedagem, segurança e evolução dos players Amazon AWS e Microsoft Azure.
-Também foram abordados os aspectos econômicos relacionados ao ROI e redução de TCO quando se opta por algum modelo de Cloud ao invés do tradicional on-premises. 
+
+Também foram abordados os aspectos econômicos relacionados ao ROI e redução de TCO quando se opta por algum modelo de Cloud ao invés do tradicional on-premises.
+
 Após a desmistificação e nivelamento sobre cloud, alguns cases envolvendo Amazon AWS e Microsoft Azure fora apresentados, entre eles destacaram-se Terra Olimpíadas 2012, Netflix, case da CWI de desenvolvimento Sharepoint na nuvem, Olympic Winter Games 2014 e Easyjet. Ao longo da palestra, recursos específicos de cada plataforma foram apresentados como o Mobile HUB & Device Farm da Amazon AWS e recursos gratuitos de hospedagem e teste de performance no Microsoft Azure.
+
 No final da palestra um comparativo entre custos de um ambiente de produção e a dicas de como realizar este cálculo foram apresentadas.
 
 Confira os slides da apresentação na íntegra:
