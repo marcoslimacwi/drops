@@ -3,35 +3,11 @@ Instalação
 
 Existem 2 formas de instalar o ambiente de desenvolvimento:
 
-1. usando Vagrant (recomendado, especialmente para Windows)
 1. usando seu ambiente local
+1. usando Vagrant 
 
 
-## Instalando com Vagrant
-
-### Dependências
-
-- Vagrant
-- VirtualBox
-
-### Instalação
-
-```
-git clone https://github.com/CWISoftware/drops.git && cd drops
-vagrant up
-```
-
-### Rodando o projeto
-
-```
-vagrant ssh
-cd /vagrant && ./scripts/run_guest.sh
-```
-
-Acesse [http://localhost:4000/drops/](http://localhost:4000/drops/)
-
-
-## Instalando no seu ambiente local
+## Instalando no seu ambiente local (Linux e OS X)
 
 ### Dependências
 
@@ -75,3 +51,26 @@ ruby dk.rb install
 Seguir passos do ambiente local (pode ser necessário executar o prompt como administrador)
 
 ```
+
+## Instalando com Vagrant
+
+### Dependências
+
+- Vagrant
+- VirtualBox
+
+### Instalação
+
+```
+git clone https://github.com/CWISoftware/drops.git && cd drops
+vagrant up
+```
+
+### Rodando o projeto
+
+```
+vagrant ssh
+cd /vagrant && ./scripts/run_guest.sh
+```
+
+Acesse [http://localhost:4000/drops/](http://localhost:4000/drops/)
