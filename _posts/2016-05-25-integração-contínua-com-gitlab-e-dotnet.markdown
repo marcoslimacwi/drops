@@ -6,12 +6,7 @@ author: alexandre-machado
 abstract: >
   GiLab CI, uma opção gratuita e de código aberto para integração contínua na CWI
 ---
-<center>
-  ![icon_gitlab_ci](https://cloud.githubusercontent.com/assets/1766903/15523034/96a88b02-21ed-11e6-8ac2-0879009150df.png)
-</center>
-<center>
-  [GitLab CI](https://about.gitlab.com/gitlab-ci/)
-</center>
+
 O [GitLab CI](https://about.gitlab.com/gitlab-ci/) é um software para integração contínua que faz parte do [GitLab](https://about.gitlab.com/), que por sua vez é um software de controle de versão baseado em Git.
 
 Com GitLab CI podemos executar builds no Unix, Windows, OSX e qualquer outra plataforma que suporte Go.
