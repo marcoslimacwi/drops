@@ -28,9 +28,11 @@ A integração com o Windows fica por conta das opções de linha de comando via
 
 # Configuração do servidor de CI (http://ci-gitlab.cwi.com.br/)
 Vá até o endereço http://ci-gitlab.cwi.com.br/ e adicione seu projeto no CI:
+
 ![image](https://cloud.githubusercontent.com/assets/1766903/15524513/96dff518-21f9-11e6-8570-da8897272b45.png)
 
 Na página do projeto, vá até **Runners** e copie o token:
+
 ![image](https://cloud.githubusercontent.com/assets/1766903/15524583/16d893a6-21fa-11e6-8c99-3d3272b78fc5.png)
 
 # Instalação de Agente de Build no Windows
@@ -62,6 +64,7 @@ gitlab-ci-multi-runner install --user COLOQUE-SEU-USUÁRIO --password COLOQUE-SU
 gitlab-ci-multi-runner start
 ```
 Seu novo *runner* irá aparecer na página de configuração do projeto:
+
 ![image](https://cloud.githubusercontent.com/assets/1766903/15524400/7e7ff302-21f8-11e6-80dd-dbdddf234683.png)
 
 Para documentação oficial visite: https://gitlab.com/gitlab-org/gitlab-ci-multi-runner/blob/master/docs/install/windows.md 
