@@ -13,9 +13,9 @@ Tendo participação nos tópico: **Geração de Pacotes**, **Testes**, **Perfor
 Separei abaixo todos os conceitos que são citados no nosso modelo de maturidade junto com dicas de como implementá-los:
 
 
-##Geração de Pacotes##
+## Geração de Pacotes
 
-# Integração de fontes a cada commit#
+# Integração de fontes a cada commit
 
 A vantágem básica da integração contínua. Garantir que a base de código que está sendo alterada por várias pessoas ao mesmo tempo continua funcionando (ou pelo menos compilando) quando juntam-se as peças novamente.
 Esse item resume-se basicamente em ter alguma servidor de IC configurado para olhar para o seu projeto.
@@ -49,23 +49,23 @@ Projetos que estejam em repositórios públicos podem se aproveitar de soluçõe
     - Como descrito na própria página incial do site: "travisIC of the windows world". Mesma proposta. 
     
     
-# Deploys Automatizados #
+# Deploys Automatizados 
 
 O final de um build bem sucedido, o último passo é enviar o código integrado, validado e testado para algums servidor para testar sua instalação. 
 
 O processo pode ser totalmente automático, quando a confiança na integração contínua já é total, mas enquanto não se chega lá, o mais comum é deixar tudo pronto para, com uma interação humana muito simples, os fontes sejam publicados no ambiente desejado. Em geral, usa-se alguma ferramenta visual específica para o deploy para monitorar qual versão está em cada ambiente e controlar quem tem permissões para fazer tal publicação. 
 Um bom exemplo de ferramenta para esse fim utilizado na CWI é o *Octopus Deploy*. Para mais detalhes, leia o [post do Giovani Barili](http://cwisoftware.github.io/drops/integracao-continua-e-deploy-continuo-tempo-e-dinheiro) que aborda esse tema específico. 
 
-# Deploys de Baixo Risco #
+# Deploys de Baixo Risco 
 
 Talvez um dos maiores trunfos pouco explorados pelas empresas e equipes de desenvolvimento é a utilização de estratégias de deploy de baixo risco, como o [Blue Green Deployment](http://martinfowler.com/bliki/BlueGreenDeployment.html), sugerido por Martin Fowler em 2010 ou o [Canary Release](http://martinfowler.com/bliki/CanaryRelease.html), bastante utilizado por grandes players como Netflix, Amazon, Google e Facebook.
 
 Em todos os casos, as técnicas sempre consistem em fazer publicações em ambientes diferentes dos atualmente em produção e em seguida redirecionar as conexções para esse novo ambiente. Técnicas desse tipo permitem rollbacks praticamente imediatos de publicações e enterra por completo o medo de implementar um Continuous Deployment. 
 
 
-##Testes##
+## Testes
 
-# Executados a cada build na IC #
+# Executados a cada build na IC 
 
 Que uma suite bem estruturada de testes automatizados unitários e funcionais são a alma de um software de alta qualdiade e longevidade. já não se discute mais. Porém essa prática não sobrevive muito tempo quando não casada a IC.
 A medida que são adicionados mais e mais testes ao projeto sua execução começa a tomar algum tempo e seria insustentável manter a execução de todos eles manualmente para cada nova mexida no código. 
@@ -76,9 +76,9 @@ Assim, essas duas técnicas ganham força uma com a outra:
 - Da, cada vez mais, confiabilidade ao processo de deploy contínuo, tendo a certeza de "alguém" retestou todo o software antes de publicá-lo.  
 
 
-##Performance##
+## Performance
 
-# Testes de performance e carga #
+# Testes de performance e carga 
 
 Seguindo a mesma lógica das funcionalidades, a performance precisa também ser garantida via testes que rodem via IC.
 É bastante comum que um relatório ou funcionalidade tenha uma boa performance quando foi criado, mas ao longo do tempo, outras alterações nas classes e banco degradem esses números. Manualmente, é muito improvável que alguém vá voltar a todas as telas para medir esses tempos daquilo que já funcionava bem. Testes que meçam os tempos de respostas e garantam que sejam sempre menor do que um valor determinado, é uma simples solução.
@@ -87,9 +87,9 @@ Outro importante passo a se considerar é o quanto as novas mudanças no sistema
 Grandes players de sistemas online costumam ter um passo exlusivo da sua IC apenas para testes de carga, antes de liberar a nova versão para produção.
 Quando já se tem testes de performance criados para controlar os tempos de resposta das requisições, organizar o step da batria de teste de carga é apenas uma questão de estratégia de quando rodar e qual hardware/ambientes utilizar.
 
-##Segurança##
+## Segurança
 
-# Testes de segurança #
+# Testes de segurança 
 
 Novamente, o dia a dia do desenvolvimento de um software pode deixar passar falhas até para os mais experientes engenheiros. Se essa falha é de segurança, como uma nova chamada de serviço colocada no javascript sem token que apenas a aplicação deveria conhecer ou uma query string com parâmetro ID que não confere se o que está sendo pedido pertence mesmo ao usuário, sabemos que é muito pior.
 Uma ótima forma de dormir tranquilo a noite é saber que sua integração contínua executa diversos testes de segurança com uma boa frequência no seu sistema.
@@ -97,9 +97,9 @@ Uma ótima forma de dormir tranquilo a noite é saber que sua integração cont�
 Um exemplo simples dessa abordagem é a execução do programa [OWASP ZAP como um dos passos da IC](https://www.securify.nl/blog/SFY20150303/automating_security_tests_using_owasp_zap_and_jenkins.html). Construido pelos próprios engenheiros da OWASP, executa dezenas de milhares de testes exploratórios de segurança apenas sabendo a URL do sistema.  
 
 
-##Código##
+## Código
 
-# Validações de estilo, complexidade e boas práticas #
+# Validações de estilo, complexidade e boas práticas 
 
 A primeira vez na vida você submente o seu código a um validador automático de boas práticas o seu ego sai abalado... mas o aprendizado que se tira dali e o reflexo deste no seu código são um divisor de águas na vida de todo desenvolvedor.
 Não temos uma restrição exata no nosso modelo sobre o que medir, o que temos como macro grupos são: 
@@ -128,9 +128,9 @@ As principais ferramentas que usamos hoja na CWI são:
     - Etc
 
 
-##Banco de Dados##
+## Banco de Dados
 
-# Atualizar a base de dados na publicação #
+# Atualizar a base de dados na publicação 
 
 Não é incomum termos uma integração contínua bastante robusta, cheia de validações e testes, porém, depois da publicação no novo ambiente, o último passo é alguém abrir manualmente a base de dados e rodar os scripts de atualização...
 É fato: onde há ação manual humana, há chance muito maior de falhas, ainda mais em atividades rotineiras e repetitivas.
@@ -144,7 +144,7 @@ Algumas ferramentas facilitam muito esse trabalho, como:
     - Solução mais simples e menos versátil do que o Liquibase. Trabalha apenas com renomeações de arquivos sql.  
  
  
-##Uhuuu! Ta, mas... por onde eu começo?## 
+## Uhuuu! Ta, mas... por onde eu começo?
 
 Não existe uma ordem correta de escolher os steps da sua integração contínua. Para cada caso um item pode trazer mais valor que outro, e algumas peculiaridade e restrições de clientes podem até inviabilizar alguns passos.
 Os steps básicos de uma integração costumam ser: 
