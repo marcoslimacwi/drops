@@ -146,7 +146,7 @@ Algumas ferramentas facilitam muito esse trabalho, como:
  
 ## Uhuuu! Ta, mas... por onde eu começo?
 
-Não existe uma ordem correta de escolher os steps da sua integração contínua. Para cada caso um item pode trazer mais valor que outro, e algumas peculiaridade e restrições de clientes podem até inviabilizar alguns passos.
+Não existe uma forma correta de escolher a ordem dos steps da sua integração contínua. Para cada caso um item pode trazer mais valor que outro, e algumas peculiaridade e restrições de clientes podem até inviabilizar alguns passos.
 Os steps básicos de uma integração costumam ser: 
 
 Build => Testes Unitários => Validações de Código => Deploy em ambiente de Testes => *O céu e o limite a partir daqui!*       
